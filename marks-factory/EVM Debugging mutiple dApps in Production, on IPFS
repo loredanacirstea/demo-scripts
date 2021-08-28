@@ -1,0 +1,18 @@
+# EVM Debugging mutiple dApps in Production, on IPFS
+
+
+You can hijack the web3 provider for any dApp viewable on an IPFS gateway and you can use this mechanism to debug it.
+
+I used Marks Factory to build a debugger for dApps. This is the debugger component and these are two different decentralized applications loaded in iframes. Each of them is included in a wrapper (called Jack) that can inject a custom web3 provider. So, any EVM call or transaction that happens in the dApp can be ran on the injected provider, on our JavaScript VM , as a Hi Jack! - see our previous Hi Jack! video for more information on how and why you can hijack the web3 provider. We can also run the dApp's calls and transactions in our debugger.
+
+We choose debugger and debug all. And we can debug the getVendor call. And all the execution steps are loaded for us to browse.
+
+We can now go to the other dApp and debug. And if the applications have linked functionality, this back and forth is quite useful.
+
+Here, we have loaded the Uniswap app and we are doing a simple swap from ETH to Wrapped ETH.
+Select debugger and debug once transaction, to only catch the swap transaction. 
+
+
+We have seen how you can hijack or debug transactions from one or multiple dApps, in production, on IPFS.
+
+Next videos we will see other surprising uses of Jack.
